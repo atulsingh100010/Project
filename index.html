@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Hotel Booking Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+
+</head>
+
+<body>
+  <section class="head">
+    <div class="container flex1">
+      <div class="scoial">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+      <div class="logo">
+        <img src="image/logo.png" alt="">
+      </div>
+      <div class="address">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>D10 Prabhatam heights , Patel nagar , Bhopal(462022)</span>
+      </div>
+    </div>
+  </section>
+
+
+  <header class="header">
+    <div class="container">
+      <nav class="navbar flex1">
+        <div class="sticky_logo logo">
+          <img src="image/logo.png" alt="">
+        </div>
+
+        <ul class="nav-menu">
+          <li> <a href="#home">Home</a> </li>
+          <li> <a href="#about">about</a> </li>
+          <li> <a href="#room">room</a> </li>
+          <li> <a href="#services">services</a> </li>
+          <li> <a href="#shop">shop</a> </li>
+          <li> <a href="#testimonials">testimonials</a> </li>
+          <li> <a href="#gallary">gallary</a> </li>
+          <li> <a href="#blog">blog</a> </li>
+          <li> <a href="#contact">contact</a> </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <div class="head_contact">
+          <i class="fas fa-phone-volume"></i>
+          <span>+919235484231/+918005108356</span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobliemmenu);
+
+    function mobliemmenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0)
+    })
+  </script>
+
+
+  <section class="home" id="home">
+    <div class="container">
+      <h1>Make Memories</h1>
+      <p>Discover the place where you have fun & enjoy a lot</p>
+
+      <div class="content grid">
+        <div class="box">
+          <span>ARRIVAL DATE </span> <br>
+          <input type="date" placeholder="29/20/2021">
+        </div>
+        <div class="box">
+          <span>DEPARTURE DATE </span> <br>
+          <input type="date" placeholder="29/20/2021">
+        </div>
+        <div class="box">
+          <span>ADULTS</span> <br>
+          <input type="number" placeholder="01">
+        </div>
+        <div class="box">
+          <span>CHILDREN </span> <br>
+          <input type="number" placeholder="01">
+        </div>
+        <div class="box">
+          <button class="flex1">
+            <span>Check Availability</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="heading">
+        <h5>EXPLORE</h5>
+        <h2>We are cool to give you pleasure
+        </h2>
+      </div>
+
+      <div class="content flex  top">
+        <div class="left">
+          <h3>As much as comfort want to get from us everything
+          </h3>
+          <p>
+            Welcome to our hotel booking website, where your dream vacation begins! Whether you're planning a relaxing getaway, a business trip, or an adventure-filled holiday, we've got you covered. With a wide range of accommodations to choose from, we make it easy for you to find the perfect place to stay that suits your needs and budget. Our user-friendly interface allows you to browse, compare, and book hotels effortlessly. Plus, our dedicated customer support team is always ready to assist you with any questions or special requests you may have.</p>
+          <p>So why wait? Start exploring now and book your next unforgettable stay with us!</p>
+          <button class="flex1">
+            <span>Check Availability</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+        <div class="right">
+          <img src="image/a.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="wrapper">
+    <div class="container">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="heading">
+            <h5>THE CITY VIEW</h5>
+            <h3>A charming view of the city</h3>
+          </div>
+          <p>Welcome to our hotel, where every window offers a captivating glimpse of the vibrant cityscape. Nestled in the heart of Bhopal, our property boasts an unparalleled perspective of the bustling streets, iconic landmarks, and the dynamic energy that defines this metropolis.</p>
+          <p> From the moment you arrive, you'll be greeted by panoramic vistas that stretch as far as the eye can see. Whether you're lounging in the comfort of your room or savoring a delicious meal at our rooftop restaurant, the stunning scenery serves as the perfect backdrop to your stay.</p>
+        </div>
+        <div class="item">
+          <div class="heading">
+            <h5>THE CITY VIEW</h5>
+            <h3>A charming view of the city</h3>
+          </div>
+          <p>Experience the allure of urban living from a new perspective at our hotel. Book your stay today and discover the magic of a charming view of the city.</p>
+          <p>Watch the city come alive as day turns into night, with twinkling lights illuminating the skyline and creating an enchanting atmosphere. Whether you're a first-time visitor or a seasoned traveler, our hotel provides an unforgettable vantage point to admire the beauty and charm of Bhopal. </p>
+        </div>
+        <div class="item">
+          <div class="heading">
+            <h5>THE CITY VIEW</h5>
+            <h3>A charming view of the city</h3>
+          </div>
+          <p>Experience the allure of Bhopal like never before with our hotel's charming view of the city. Perched atop Ecorik, you'll be treated to an unforgettable panorama that captures the essence of urban beauty. </p>
+          <p> Watch as the cityscape comes to life, with twinkling lights illuminating the skyline against the backdrop of majestic mountains/sweeping coastlines, depending on your location.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+  <section class="wrapper2">
+    <div class="container">
+      <div class="heading mtop">
+        <h5>FACILITIES</h5>
+        <h2>Giving entirely awesome </h2>
+      </div>
+
+      <div class="content grid mtop">
+        <div class="box">
+          <i class="fas fa-shipping-fast"></i>
+          <h3>Pick Up & Drop</h3>
+          <p>Your safety and comfort are our top priorities. Rest assured, all our vehicles undergo regular maintenance and adhere to strict cleanliness standards. </p>
+          <span class='far fa-long-arrow-alt-right'></span>
+        </div>
+        <div class="box">
+          <i class="fas fa-mug-hot"></i>
+          <h3>Pick Up & Drop</h3>
+          <p>With our Pick Up & Drop service, you can enjoy the luxury of having your favorite beverages delivered directly to your room or any desired location within the hotel premises.</p>
+          <span class='far fa-long-arrow-alt-right'></span>
+        </div>
+        <div class="box">
+          <i class="fas fa-car"></i>
+          <h3>Pick Up & Drop</h3>
+          <p>Welcome to our convenient Pick Up & Drop service! At Ecorik, we understand the importance of hassle-free transportation for our guests.</p>
+          <span class='far fa-long-arrow-alt-right'></span>
+        </div>
+        <div class="box">
+          <i class="far fa-water"></i>
+          <h3>Pick Up & Drop</h3>
+          <p>Our courteous drivers will ensure that you reach our hotel safely and on time, ready to dive into our inviting swimming pool.</p>
+          <span class='far fa-long-arrow-alt-right'></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="room wrapper2 top" id="room">
+    <div class="container">
+      <div class="heading">
+        <h5>OUR ROOMS</h5>
+        <h2>Fascinating rooms & suites </h2>
+      </div>
+      <div class="content flex mtop">
+        <div class="left grid2">
+          <div class="box">
+            <i class="fas fa-desktop"></i>
+            <p>Free Cost</p>
+            <h3>No booking fee</h3>
+          </div>
+          <div class="box">
+            <i class="fas fa-dollar-sign"></i>
+            <p>Free Cost</p>
+            <h3>Best rate guarantee</h3>
+          </div>
+          <div class="box">
+            <i class="fab fa-resolving"></i>
+            <p>Free Cost</p>
+            <h3>Reservations 24/7</h3>
+          </div>
+          <div class="box">
+            <i class="fal fa-alarm-clock"></i>
+            <p>Free Cost</p>
+            <h3>High-speed Wi-Fi</h3>
+          </div>
+          <div class="box">
+            <i class="fas fa-mug-hot"></i>
+            <p>Free Cost</p>
+            <h3>Free breakfast</h3>
+          </div>
+          <div class="box">
+            <i class="fas fa-user-tie"></i>
+            <p>Free Cost</p>
+            <h3>One person free</h3>
+          </div>
+        </div>
+        <div class="right">
+          <img src="image/r.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="timer about wrapper">
+    <div class="background"> </div>
+    <div class="container">
+      <div class="heading">
+        <h5>LAST MINUTE!</h5>
+        <h2> <span>Incredible!</span> Are you coming today</h2>
+      </div>
+
+      <div id="time" class="flex1 mtop"> </div>
+    </div>
+  </section>
+  <script src="js/jquery.countdown.js" charset="utf-8"></script>
+  <script src="js/jquery.countdown.min.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    $('#time').countdown('2024/01/01', function(event) {
+      $(this).html(event.strftime(
+        '<div class="clock"><span>%d</span> <p>Days</p></div> ' +
+        '<div class="clock"><span>%H</span> <p>Hours</p></div> ' +
+        '<div class="clock"><span>%M</span> <p>Minutes</p></div> ' +
+        '<div class="clock"><span>%S</span> <p>Seconds</p></div> '
+      ));
+    });
+  </script>
+
+
+  <section class="offer mtop" id="services">
+    <div class="container">
+      <div class="heading">
+        <h5>EXCLUSIVE OFFERS </h5>
+        <h3>You can get an exclusive offer </h3>
+      </div>
+
+      <div class="content grid2 mtop">
+        <div class="box flex">
+          <div class="left">
+            <img src="image/o1.jpg" alt="">
+          </div>
+          <div class="right">
+            <h4>Deluxe Room</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p> Indulge in luxury and comfort with our Deluxe Rooms. Designed to provide you with a memorable stay, our Deluxe Rooms offer spacious accommodation and a range of amenities to make your visit unforgettable.</p>
+            <h5>From Rs.5000/night</h5>
+            <button class="flex1">
+              <span>Check Availability</span>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="left">
+            <img src="image/o2.jpg" alt="">
+          </div>
+          <div class="right">
+            <h4>Deluxe Room</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p> Indulge in luxury and comfort with our Deluxe Rooms. Designed to provide you with a memorable stay, our Deluxe Rooms offer spacious accommodation and a range of amenities to make your visit unforgettable.</p>
+            <h5>From Rs.5000/night</h5>
+            <button class="flex1">
+              <span>Check Availability</span>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="left">
+            <img src="image/o3.jpg" alt="">
+          </div>
+          <div class="right">
+            <h4>Deluxe Room</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p> Indulge in luxury and comfort with our Deluxe Rooms. Designed to provide you with a memorable stay, our Deluxe Rooms offer spacious accommodation and a range of amenities to make your visit unforgettable.</p>
+            <h5>From Rs.5000/night</h5>
+            <button class="flex1">
+              <span>Check Availability</span>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="left">
+            <img src="image/o4.jpg" alt="">
+          </div>
+          <div class="right">
+            <h4>Deluxe Room</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p> Indulge in luxury and comfort with our Deluxe Rooms. Designed to provide you with a memorable stay, our Deluxe Rooms offer spacious accommodation and a range of amenities to make your visit unforgettable.</p>
+            <h5>From Rs.5000/night</h5>
+            <button class="flex1">
+              <span>Check Availability</span>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="area top">
+    <div class="container">
+      <div class="heading">
+        <h5>RESTAURANT</h5>
+        <h3>The area we cover under ecorik</h3>
+      </div>
+
+      <div class="content flex mtop">
+        <div class="left">
+          <img src="image/aera.jpg" alt="">
+        </div>
+        <div class="right">
+          <ul>
+            <li>Restaurant </li>
+            <li>Swimming pool </li>
+            <li>Conference room</li>
+          </ul>
+
+          <p>Whether you're craving a hearty breakfast to start your day, a leisurely lunch with colleagues, or a romantic dinner for two, our restaurant caters to every occasion. With a diverse menu featuring local specialties and international favorites, there's something to satisfy every palate.</p>
+          <p>Our hotel boasts a sparkling swimming pool, perfect for cooling off and enjoying some leisure time during your stay. </p>
+          <button class="flex1">
+            <span>Check Availability</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="offer2 about wrapper timer top" id="shop">
+    <div class="container">
+      <div class="heading">
+        <h5>EXCLUSIVE OFFERS </h5>
+        <h3>You can get an exclusive offer </h3>
+      </div>
+
+      <div class="content grid  top">
+        <div class="box">
+          <h5>UP TO 30% OFF</h5>
+          <h3>Swimming for man</h3>
+          <span>4.5 <label>(432 Reviews)</label> </span>
+          <p>Book now to take advantage of this exclusive offer and elevate your stay with us.</p>
+          <div class="flex">
+            <i class="fal fa-alarm-clock"> Duration: 2Hours</i>
+            <i class="far fa-dot-circle"> 18+ years</i>
+          </div>
+          <button class="flex1">
+            <span>Check Availability</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+        <div class="box">
+          <h5>UP TO 30% OFF</h5>
+          <h3>Swimming for man</h3>
+          <span>4.5 <label>(432 Reviews)</label> </span>
+          <p>Book now to take advantage of this exclusive offer and elevate your stay with us.</p>
+          <div class="flex">
+            <i class="fal fa-alarm-clock"> Duration: 2Hours</i>
+            <i class="far fa-dot-circle"> 18+ years</i>
+          </div>
+          <button class="flex1">
+            <span>Check Availability</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+        <div class="box">
+          <h5>UP TO 30% OFF</h5>
+          <h3>Swimming for man</h3>
+          <span>4.5 <label>(432 Reviews)</label> </span>
+          <p>Book now to take advantage of this exclusive offer and elevate your stay with us.</p>
+          <div class="flex">
+            <i class="fal fa-alarm-clock"> Duration: 2Hours</i>
+            <i class="far fa-dot-circle"> 18+ years</i>
+          </div>
+          <button class="flex1">
+            <span>Check Availability</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="customer top" id="testimonials">
+    <div class="container">
+      <div class="heading">
+        <h5>FEEDBACK </h5>
+        <h3>What customers say </h3>
+      </div>
+
+      <div class="owl-carousel owl-theme mtop">
+        <div class="item">
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Excellent Swimming</h3>
+          <p>Highlight the quality of the swimming pool facilities, such as its cleanliness, size, and design. Guests often appreciate if the pool area is well-maintained and equipped with comfortable loungers, towels, and perhaps even a poolside bar or snacks.
+            Emphasize the importance of maintaining the pool at a comfortable temperature, whether it's heated or cooled appropriately. Cleanliness is crucial too – guests expect crystal-clear water and well-kept surroundings.
+          </p>
+          <div class="admin flex">
+            <div class="img">
+              <img src="image/c1.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>Atul Singh</h3>
+              <span>Manager</span>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Excellent Swimming</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="admin flex">
+            <div class="img">
+              <img src="image/c2.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>Ayman Jensi</h3>
+              <span>Manager</span>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Excellent Swimming</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="admin flex">
+            <div class="img">
+              <img src="image/c3.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>Ayman Jensi</h3>
+              <span>Manager</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: false,
+      navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+  <section class="gallary top" id="gallary">
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="image/g1.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/g2.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/g3.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/g4.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/g5.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/g1.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/g2.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/g3.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      slideTransition: 'linear',
+      autoplayTimeout: 4000,
+      autoplaySpeed: 4000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 3
+        },
+        1000: {
+          items: 5
+        }
+      }
+    })
+  </script>
+
+
+  <section class="blog top" id="blog">
+    <div class="container">
+      <div class="heading">
+        <h5>OUR BLOG</h5>
+        <h3>News & articles updates</h3>
+      </div>
+
+      <div class="content grid mtop">
+        <div class="box">
+          <div class="img">
+            <img src="image/b1.jpg" alt="">
+            <span>HOTEL</span>
+          </div>
+          <div class="text">
+            <div class="flex">
+              <i class="far fa-user"> <label>Admin</label> </i>
+              <i class="far fa-comments"> <label>Comment</label> </i>
+            </div>
+            <h3>Celebrating Decade Years Of Hotel In 2020</h3>
+            <p> "Reflecting on a Decade of Hospitality Excellence: Celebrating 10 Years of Our Hotel's Legacy in 2020".</p>
+            <a href="#">Read More <i class='far fa-long-arrow-alt-right'></i> </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/b2.jpg" alt="">
+            <span>HOTEL</span>
+          </div>
+          <div class="text">
+            <div class="flex">
+              <i class="far fa-user"> <label>Admin</label> </i>
+              <i class="far fa-comments"> <label>Comment</label> </i>
+            </div>
+            <h3>Celebrating Decade Years Of Hotel In 2020</h3>
+            <p> "Reflecting on a Decade of Hospitality Excellence: Celebrating 10 Years of Our Hotel's Legacy in 2020".</p>
+            <a href="#">Read More <i class='far fa-long-arrow-alt-right'></i> </a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/b3.jpg" alt="">
+            <span>HOTEL</span>
+          </div>
+          <div class="text">
+            <div class="flex">
+              <i class="far fa-user"> <label>Admin</label> </i>
+              <i class="far fa-comments"> <label>Comment</label> </i>
+            </div>
+            <h3>Celebrating Decade Years Of Hotel In 2020</h3>
+            <p> "Reflecting on a Decade of Hospitality Excellence: Celebrating 10 Years of Our Hotel's Legacy in 2020".</p>
+            <a href="#">Read More <i class='far fa-long-arrow-alt-right'></i> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="map top">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14131.036667732067!2d85.32395955!3d27.69383745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1638187678048!5m2!1sen!2snp" width="600" height="450" style="border:0;"
+      allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+
+  <footer>
+    <div class="container top">
+      <div class="subscribe" id="contact">
+        <h2>Subscribe newsletter</h2>
+        <p> "Subscribe to our newsletter for exclusive offers, insider tips, and updates on upcoming events at our hotel".</p>
+        <div class="input flex">
+          <input type="email" placeholder="Your Email address">
+          <button class="flex1">
+            <span>Subscribe</span>
+            <i class="fas fa-arrow-circle-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="content grid  top">
+        <div class="box">
+          <div class="logo">
+            <img src="image/logo.png" alt="">
+          </div>
+          <p>I value your feedback immensely. Your satisfaction is our priority, and hearing about your experience helps us continually improve our services. Please take a moment to share your thoughts with us, whether it's praise, suggestions, or areas where we can do better. Your input shapes the future of our establishment, and we're here to ensure your stay exceeds expectations. Thank you for choosing us and for taking the time to help us serve you better.
+
+
+
+
+
+          </p>
+          <div class="social flex">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+
+        <div class="box">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><i class="fas fa-angle-double-right"></i>Big Data</li>
+            <li><i class="fas fa-angle-double-right"></i>Wellness</li>
+            <li><i class="fas fa-angle-double-right"></i>Spa Gallery</li>
+            <li><i class="fas fa-angle-double-right"></i>Reservation</li>
+            <li><i class="fas fa-angle-double-right"></i>FAQ</li>
+            <li><i class="fas fa-angle-double-right"></i>Contact</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>Services</h2>
+          <ul>
+            <li><i class="fas fa-angle-double-right"></i>Restaurant</li>
+            <li><i class="fas fa-angle-double-right"></i>Swimming Pool</li>
+            <li><i class="fas fa-angle-double-right"></i>Wellness & Spa</li>
+            <li><i class="fas fa-angle-double-right"></i>Conference Room</li>
+            <li><i class="fas fa-angle-double-right"></i>Events</li>
+            <li><i class="fas fa-angle-double-right"></i>Adult Room</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>Services</h2>
+          <div class="icon flex">
+            <div class="i">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="text">
+              <h3>Address</h3>
+              <p>D10 Prabhatam heights , Patel nagar , Bhopal(462022)</p>
+            </div>
+          </div>
+          <div class="icon flex">
+            <div class="i">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="text">
+              <h3>Phone</h3>
+              <p>+919235484231/+918005108356</p>
+            </div>
+          </div>
+          <div class="icon flex">
+            <div class="i">
+              <i class="far fa-envelope"></i>
+            </div>
+            <div class="text">
+              <h3>Email</h3>
+              <p>atulsingh0001@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+
+</html>
